@@ -24,8 +24,6 @@ export async function execute(message: Message) {
 	//   guild_id: message.guildId
 	// };
 
-  console.log(message);
-
 	console.log(
 		`In ${message.guild.name} (${message.channel.id}), the user with roles [${message.member.roles.cache.map(r => r.name)}] ${message.author.username} says: ${message.content}`
 	);
